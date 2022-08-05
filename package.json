@@ -1,0 +1,33 @@
+{
+  "name": "meroshop",
+  "version": "1.0.0",
+  "description": "Full ecommerce site using MERN",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server",
+    "seeder": "node backend/utils/seeder.js",
+    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "N@rutO",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cloudinary": "^1.30.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "fileupload": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.19",
+    "react-alert-template-basic": "^1.0.2",
+    "stripe": "^9.16.0",
+    "validator": "^13.7.0"
+  }
+}
