@@ -1,1 +1,1 @@
-web:node frontend/build.index.html
+web:node backend/server.js

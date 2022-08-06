@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Full ecommerce site using MERN",
   "main": "server.js",
-  "engines": {
-    "node": "14.16.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node backend/server.js",
