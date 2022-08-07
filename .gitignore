@@ -1,11 +1,11 @@
 
 # dependencies
 /node_modules
-/backend/frontend/node_modules/
+/frontend/node_modules/
 
 
 # production
-/backend/frontend/build
+/frontend/build
 
 # misc
 /backend/config/config.env
