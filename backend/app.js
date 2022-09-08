@@ -25,7 +25,7 @@ app.use(fileUpload());
 //         )
 //     })
 // }
-if(process.env.NODE_ENV === 'PRODUCTION'){
+
     // app.use(express.static('../frontend/build/'))
     // app.get('*',(req, res)=>{
     //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
@@ -34,7 +34,7 @@ if(process.env.NODE_ENV === 'PRODUCTION'){
     app.get('/',(req, res)=>{
         res.send('Welcome to meroshop Api');
     })
-}
+
 
 //Import all routes
 const products = require('./routes/product');
