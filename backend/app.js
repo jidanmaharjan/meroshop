@@ -27,70 +27,70 @@ app.use(fileUpload());
 // }
 if(process.env.NODE_ENV === 'PRODUCTION'){
     app.use(express.static(path.join(__dirname, '../frontend/build/')))
-    app.get('/*',(req, res)=>{
+    app.get('/',(req, res)=>{
         res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
         )
     })
-    // app.get('/cart',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/product/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/dashboard',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/admin/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/myorders',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/password/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/search/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/login',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/register',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/profile',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/shipping',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/profile/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/order/*',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/payment',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
-    // app.get('/success',(req, res)=>{
-    //     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
-    //     )
-    // })
+    app.get('/cart',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/product/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/dashboard',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/admin/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/myorders',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/password/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/search/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/login',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/register',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/profile',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/shipping',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/profile/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/order/*',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/payment',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
+    app.get('/success',(req, res)=>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html')
+        )
+    })
 } 
 
 
