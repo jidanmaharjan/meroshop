@@ -102,7 +102,7 @@ function App() {
           <Route path='/order/:orderid' element={<OrderDetails />} />
         </Route>
         
-        <Route path='payment' element={<ProtectedRoute />} >
+        <Route path='/payment' element={<ProtectedRoute />} >
           <Route path='/payment' element={stripeApiKey &&
         <Elements stripe={loadStripe(stripeApiKey)}> <Payment /> </Elements>} />
         </Route>
